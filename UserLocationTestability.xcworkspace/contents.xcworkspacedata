@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:UserLocation-V1/UserLocation-V1.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UserLocation-V2/UserLocation-V2.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:UserLocation-V3/UserLocation-V3.xcodeproj">
+   </FileRef>
+</Workspace>
