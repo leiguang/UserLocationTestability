@@ -409,7 +409,3 @@ class UserLocationServiceTests: XCTestCase {
 创建mock对象可能是其中最懒得任务，不过已经有一些库和工具来辅助做这件事，例如：[Sourcery](https://github.com/krzysztofzablocki/Sourcery)。我的同事  [Hugo Peral](https://twitter.com/hugojperal) 也写了一篇文章 [Saving time with Sourcery](https://tech.edreamsodigeo.com/saving-time-with-sourcery) 来解释如何使用 *Sourcery* 节省测试时间。或者 [John Sundell](https://twitter.com/johnsundell) 的这篇 [Mocking in Swift](https://www.swiftbysundell.com/posts/mocking-in-swift)，它提供了有关如何制作mock的更多细节。
 
 最后，感谢您阅读这篇文章。如果您觉得它对您有用或者您认为对某人有用，请分享它 😉。如果您有任何疑问或者改进意见，请随时在下面发表评论。
-
-
-
-**本文代码 [GitHub](https://github.com/leiguang/UserLocationTestability)**
