@@ -12,7 +12,15 @@
 		9A40771922F8690400A405C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A40771722F8690400A405C4 /* Main.storyboard */; };
 		9A40771B22F8690500A405C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A40771A22F8690500A405C4 /* Assets.xcassets */; };
 		9A40771E22F8690500A405C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A40771C22F8690500A405C4 /* LaunchScreen.storyboard */; };
-		9A40772922F8690500A405C4 /* UserLocation_V3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A40772822F8690500A405C4 /* UserLocation_V3Tests.swift */; };
+		9A40774422F89F1000A405C4 /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A40774322F89F1000A405C4 /* UserLocation.swift */; };
+		9A40774622F89F2800A405C4 /* UserLocationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A40774522F89F2800A405C4 /* UserLocationError.swift */; };
+		9A40774822F89F3D00A405C4 /* UserLocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A40774722F89F3D00A405C4 /* UserLocationProvider.swift */; };
+		9A40774A22F89F5000A405C4 /* LocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A40774922F89F5000A405C4 /* LocationProvider.swift */; };
+		9A40775322F8A7F000A405C4 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A40775222F8A7F000A405C4 /* ViewControllerTests.swift */; };
+		9A40775622F8A86600A405C4 /* UserLocationMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A40775522F8A86600A405C4 /* UserLocationMock.swift */; };
+		9A40775822F8A8C000A405C4 /* UserLocationProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A40775722F8A8C000A405C4 /* UserLocationProviderMock.swift */; };
+		9A40775A22F8AC9900A405C4 /* LocationProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A40775922F8AC9900A405C4 /* LocationProviderMock.swift */; };
+		9A40775E22F8AF0500A405C4 /* UserLocationServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A40775D22F8AF0500A405C4 /* UserLocationServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +42,16 @@
 		9A40771D22F8690500A405C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A40771F22F8690500A405C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A40772422F8690500A405C4 /* UserLocation-V3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UserLocation-V3Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A40772822F8690500A405C4 /* UserLocation_V3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocation_V3Tests.swift; sourceTree = "<group>"; };
 		9A40772A22F8690500A405C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A40774322F89F1000A405C4 /* UserLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocation.swift; sourceTree = "<group>"; };
+		9A40774522F89F2800A405C4 /* UserLocationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationError.swift; sourceTree = "<group>"; };
+		9A40774722F89F3D00A405C4 /* UserLocationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationProvider.swift; sourceTree = "<group>"; };
+		9A40774922F89F5000A405C4 /* LocationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProvider.swift; sourceTree = "<group>"; };
+		9A40775222F8A7F000A405C4 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
+		9A40775522F8A86600A405C4 /* UserLocationMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationMock.swift; sourceTree = "<group>"; };
+		9A40775722F8A8C000A405C4 /* UserLocationProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationProviderMock.swift; sourceTree = "<group>"; };
+		9A40775922F8AC9900A405C4 /* LocationProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProviderMock.swift; sourceTree = "<group>"; };
+		9A40775D22F8AF0500A405C4 /* UserLocationServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +95,7 @@
 			children = (
 				9A40771322F8690400A405C4 /* AppDelegate.swift */,
 				9A40771522F8690400A405C4 /* ViewController.swift */,
+				9A40774D22F8A50E00A405C4 /* UserLocationProvider */,
 				9A40771722F8690400A405C4 /* Main.storyboard */,
 				9A40771A22F8690500A405C4 /* Assets.xcassets */,
 				9A40771C22F8690500A405C4 /* LaunchScreen.storyboard */,
@@ -90,10 +107,33 @@
 		9A40772722F8690500A405C4 /* UserLocation-V3Tests */ = {
 			isa = PBXGroup;
 			children = (
-				9A40772822F8690500A405C4 /* UserLocation_V3Tests.swift */,
+				9A40775222F8A7F000A405C4 /* ViewControllerTests.swift */,
+				9A40775D22F8AF0500A405C4 /* UserLocationServiceTests.swift */,
+				9A40775422F8A85700A405C4 /* Mock */,
 				9A40772A22F8690500A405C4 /* Info.plist */,
 			);
 			path = "UserLocation-V3Tests";
+			sourceTree = "<group>";
+		};
+		9A40774D22F8A50E00A405C4 /* UserLocationProvider */ = {
+			isa = PBXGroup;
+			children = (
+				9A40774322F89F1000A405C4 /* UserLocation.swift */,
+				9A40774522F89F2800A405C4 /* UserLocationError.swift */,
+				9A40774722F89F3D00A405C4 /* UserLocationProvider.swift */,
+				9A40774922F89F5000A405C4 /* LocationProvider.swift */,
+			);
+			path = UserLocationProvider;
+			sourceTree = "<group>";
+		};
+		9A40775422F8A85700A405C4 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				9A40775522F8A86600A405C4 /* UserLocationMock.swift */,
+				9A40775722F8A8C000A405C4 /* UserLocationProviderMock.swift */,
+				9A40775922F8AC9900A405C4 /* LocationProviderMock.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +189,7 @@
 					};
 					9A40772322F8690500A405C4 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 						TestTargetID = 9A40770F22F8690400A405C4;
 					};
 				};
@@ -197,7 +238,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A40774622F89F2800A405C4 /* UserLocationError.swift in Sources */,
+				9A40774422F89F1000A405C4 /* UserLocation.swift in Sources */,
 				9A40771622F8690400A405C4 /* ViewController.swift in Sources */,
+				9A40774A22F89F5000A405C4 /* LocationProvider.swift in Sources */,
+				9A40774822F89F3D00A405C4 /* UserLocationProvider.swift in Sources */,
 				9A40771422F8690400A405C4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,7 +251,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A40772922F8690500A405C4 /* UserLocation_V3Tests.swift in Sources */,
+				9A40775E22F8AF0500A405C4 /* UserLocationServiceTests.swift in Sources */,
+				9A40775322F8A7F000A405C4 /* ViewControllerTests.swift in Sources */,
+				9A40775822F8A8C000A405C4 /* UserLocationProviderMock.swift in Sources */,
+				9A40775622F8A86600A405C4 /* UserLocationMock.swift in Sources */,
+				9A40775A22F8AC9900A405C4 /* LocationProviderMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +444,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "UserLocation-V3Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +454,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leiguang.UserLocation-V3Tests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UserLocation-V3.app/UserLocation-V3";
@@ -415,6 +466,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "UserLocation-V3Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     var locationManager: CLLocationManager
     var userLocation: CLLocation?
     
-    init(locationProvider: CLLocationManager = CLLocationManager()) {
+    init(locationProvider: CLLocationManager) {
         self.locationManager = locationProvider
         super.init(nibName: nil, bundle: nil)
     }

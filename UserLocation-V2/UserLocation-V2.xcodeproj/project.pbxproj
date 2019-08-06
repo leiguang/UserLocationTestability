@@ -12,7 +12,12 @@
 		9A4076ED22F867F900A405C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4076EB22F867F900A405C4 /* Main.storyboard */; };
 		9A4076EF22F867FA00A405C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A4076EE22F867FA00A405C4 /* Assets.xcassets */; };
 		9A4076F222F867FA00A405C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4076F022F867FA00A405C4 /* LaunchScreen.storyboard */; };
-		9A4076FD22F867FA00A405C4 /* UserLocation_V2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4076FC22F867FA00A405C4 /* UserLocation_V2Tests.swift */; };
+		9A40773422F8746100A405C4 /* UserLocationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A40773322F8746100A405C4 /* UserLocationError.swift */; };
+		9A40773622F874A000A405C4 /* UserLocationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A40773522F874A000A405C4 /* UserLocationProvider.swift */; };
+		9A40773822F874CB00A405C4 /* UserLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A40773722F874CB00A405C4 /* UserLocation.swift */; };
+		9A40773E22F889A400A405C4 /* UserLocationMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A40773D22F889A400A405C4 /* UserLocationMock.swift */; };
+		9A40774022F8912800A405C4 /* UserLocationProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A40773F22F8912800A405C4 /* UserLocationProviderMock.swift */; };
+		9A40774222F89A7800A405C4 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A40774122F89A7800A405C4 /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +39,13 @@
 		9A4076F122F867FA00A405C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A4076F322F867FA00A405C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A4076F822F867FA00A405C4 /* UserLocation-V2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UserLocation-V2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A4076FC22F867FA00A405C4 /* UserLocation_V2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocation_V2Tests.swift; sourceTree = "<group>"; };
 		9A4076FE22F867FA00A405C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A40773322F8746100A405C4 /* UserLocationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationError.swift; sourceTree = "<group>"; };
+		9A40773522F874A000A405C4 /* UserLocationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationProvider.swift; sourceTree = "<group>"; };
+		9A40773722F874CB00A405C4 /* UserLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocation.swift; sourceTree = "<group>"; };
+		9A40773D22F889A400A405C4 /* UserLocationMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationMock.swift; sourceTree = "<group>"; };
+		9A40773F22F8912800A405C4 /* UserLocationProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationProviderMock.swift; sourceTree = "<group>"; };
+		9A40774122F89A7800A405C4 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,7 @@
 			children = (
 				9A4076E722F867F900A405C4 /* AppDelegate.swift */,
 				9A4076E922F867F900A405C4 /* ViewController.swift */,
+				9A40774C22F89F9300A405C4 /* UserLocationProvider */,
 				9A4076EB22F867F900A405C4 /* Main.storyboard */,
 				9A4076EE22F867FA00A405C4 /* Assets.xcassets */,
 				9A4076F022F867FA00A405C4 /* LaunchScreen.storyboard */,
@@ -90,10 +101,30 @@
 		9A4076FB22F867FA00A405C4 /* UserLocation-V2Tests */ = {
 			isa = PBXGroup;
 			children = (
-				9A4076FC22F867FA00A405C4 /* UserLocation_V2Tests.swift */,
+				9A40774122F89A7800A405C4 /* ViewControllerTests.swift */,
+				9A40774B22F89F7900A405C4 /* Mock */,
 				9A4076FE22F867FA00A405C4 /* Info.plist */,
 			);
 			path = "UserLocation-V2Tests";
+			sourceTree = "<group>";
+		};
+		9A40774B22F89F7900A405C4 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				9A40773D22F889A400A405C4 /* UserLocationMock.swift */,
+				9A40773F22F8912800A405C4 /* UserLocationProviderMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		9A40774C22F89F9300A405C4 /* UserLocationProvider */ = {
+			isa = PBXGroup;
+			children = (
+				9A40773722F874CB00A405C4 /* UserLocation.swift */,
+				9A40773322F8746100A405C4 /* UserLocationError.swift */,
+				9A40773522F874A000A405C4 /* UserLocationProvider.swift */,
+			);
+			path = UserLocationProvider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +228,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A40773622F874A000A405C4 /* UserLocationProvider.swift in Sources */,
 				9A4076EA22F867F900A405C4 /* ViewController.swift in Sources */,
 				9A4076E822F867F900A405C4 /* AppDelegate.swift in Sources */,
+				9A40773422F8746100A405C4 /* UserLocationError.swift in Sources */,
+				9A40773822F874CB00A405C4 /* UserLocation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +240,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A4076FD22F867FA00A405C4 /* UserLocation_V2Tests.swift in Sources */,
+				9A40774022F8912800A405C4 /* UserLocationProviderMock.swift in Sources */,
+				9A40774222F89A7800A405C4 /* ViewControllerTests.swift in Sources */,
+				9A40773E22F889A400A405C4 /* UserLocationMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
